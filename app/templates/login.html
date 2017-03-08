@@ -1,0 +1,51 @@
+<div class="container" id="cont-login">
+
+        <div class="col-md-4">
+
+            <form class="form-login" ng-controller="AdminController">
+
+                    <div class="input-group-md">
+
+                        <label>Email</label>
+                        <input type="email"
+                               ng-model="mv.user.email"
+                               class="form-control"
+                               placeholder="@exemplo.com">
+
+                        <label>Senha</label>
+                        <input type="password"
+                               ng-model="mv.user.password"
+                               class="form-control"
+                               required>
+
+                        <button class="btn btn-danger btn-group-justified btn-login" ng-click="mv.doLogin()">Entrar</button>
+
+                    </div>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+
+            <form class="form-cadastro">
+
+                <div class="input-group-md">
+
+                    <h2>Cadastre-se</h2>
+
+                    <label>Nome</label>
+                    <input type="text" class="form-control" placeholder="Ex.: João">
+
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="@joao.com">
+
+                    <label>Senha</label>
+                    <input type="password" ng-model="mv.user.password" class="form-control" required  >
+
+                    <button class="btn btn-success btn-group-justified btn-login">Cadastrar</button>
+
+                </div>
+            </form>
+        </div>
+
+</div>
+

@@ -1,0 +1,132 @@
+<html ng-app="myApp">
+    <head>
+        <title>Loja</title>
+        <meta charset="utf-8">
+
+        <!-- Angular Material style sheet -->
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    </head>
+    <body ng-cloak>
+        <header>
+
+            <div class="header-login">
+
+                <div class="container">
+
+                    <div class="col-md-6 login">
+
+                        <i class="fa fa-sign-in"></i>
+                        <a href="#" data-toggle="modal" data-target="#myModal">Entrar</a>
+                    </div>
+
+                    <div class="col-md-6 pull-right input-group">
+                        <input type="search"
+                               class="form-control"
+                               placeholder="Procure seu estilo...">
+                        <span class="input-group-btn">
+                            <button class="btn" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="container">
+
+                    <div class="row">
+                        <nav id="menu" class="pull-right">
+                            <ul>
+                                <li><a href="#">Loja</a></li>
+                                <li><a href="#">Novidades</a></li>
+                                <li><a href="#">Masculino</a></li>
+                                <li><a href="#">Feminino</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+
+                <img id="logo" src="images/logo-ideal.png" alt="Logo" ui-sref="home">
+
+            </div>
+
+        </header>
+
+        <section>
+            <!--<ui-view></ui-view>-->
+            <div ng-controller="SliderController as mv">
+                <my-slide products="mv.products"></my-slide>
+                <my-slide products="mv.products"></my-slide>
+            </div>
+
+                <div class="container">
+
+            <!-- Pop UP para formulario de Login -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-smw">
+
+                    <!-- Conteudo do POP-UP-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Logar</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <form class="form-login">
+                                        <label>Email</label>
+                                        <input type="email"
+                                               ng-model="mv.user.email"
+                                               class="form-control"
+                                               placeholder="@exemplo.com">
+
+                                        <label>Senha</label>
+                                        <input type="password"
+                                               ng-model="mv.user.password"
+                                               class="form-control"
+                                               required>
+
+                                    <button class="btn btn-danger btn-group-justified btn-login" ng-click="mv.doLogin()">Entrar</button>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <script src="libs/angular/angular.min.js"></script>
+        <script src="libs/angular/angular-ui-router.js"></script>
+        <script src="modules/module.js"></script>
+        <script src="modules/routes.js"></script>
+        <script src="controllers/loja-controller.js"></script>
+        <script src="controllers/login-controller.js"></script>
+        <script src="directives/loja-directive.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+        <!-- Angular Material requires Angular.js Libraries -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+        <!-- Angular Material Library -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    </body>
+</html>

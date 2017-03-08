@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url("../fonts/OpenSans-Light.ttf");
+    font-size: 1em;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #ffffff;
+}
+
+header .container {
+    position: relative;
+}
+
+header .header-login {
+    height: 50px;
+    position: relative;
+    background-color: #000000;
+}
+
+header .login i {
+    margin: 8px;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+header .login a {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'OpenSans';
+}
+
+header .input-group .form-control {
+    margin-top: 8px ;
+    border: none;
+    border-radius:0px;
+}
+header .btn {
+    position: relative;
+    background-color: yellow;
+    top: 4px;
+}
+
+header .input-group-btn i{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header #logo {
+    position: relative;
+    margin: 2px;
+    width: 260px;
+}
+
+#menu {
+    margin: 46px 0px;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    font-family: 'OpenSans', serif;
+    padding: 10px 25px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.destaques hr {
+    border: #0f0f0f solid 2px;
+    margin-bottom: 50px;
+}
+
+section .banner {
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/banner.png");
+}
+
+#produtos .destaques h2 {
+    font-family: 'OpenSans';
+}
+
+#produtos .produtos-destaque {
+    position: relative;
+    width: 100%;
+}
+
+#produtos .col-md-3 img {
+    width: 200px;
+}
+
+.produtos-destaque .seta i {
+    font-size: 36px;
+    line-height: 200px;
+}
+
+.produtos-destaque .col-md-10 button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: relative;
+    top: -40px;
+}
+
+.produtos-destaque .col-md-10 button i{
+    font-size: 28px;
+    outline-width: 28px;
+}
+
+.btn-login {
+    margin-top: 30px;
+}
+
+form label {
+    margin-top: 30px;
+}
+
+.form-login h2 {
+    margin: 0 4px;
+}
+
+.input-group-md {
+    padding: 10px;
+    border: solid black 1px;
+    position: relative;
+    top: 50px;
+}
+
+#cont-login {
+    position: relative;
+}
+
+.form-cadastro {
+    position: relative;
+
+}

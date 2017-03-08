@@ -1,0 +1,28 @@
+<div id="produtos" class="container">
+    <div class="row destaques">
+        <h2>Destaques</h2>
+        <hr>
+    </div>
+
+    <div class="row produtos-destaque">
+        <div class="col-md-1 seta">
+            <button class="btn"><i class="fa fa-arrow-circle-left"></i></button>
+        </div>
+
+        <div class="col-md-10" class="slider">
+
+            <div class="col-md-3" ng-repeat="product in products">
+                <img ng-src="{{product.img}}">
+                <button class="btn  btn-danger pull-right" type="button"><i class="fa fa-cart-plus"></i></button>
+                <p>{{product.product}}</p>
+                <h3>{{product.price | currency}}</h3>
+                <p>{{product.description}}</p>
+            </div>
+
+        </div>
+
+        <div class="col-md-1 seta">
+            <button class="btn"><i class="fa fa-arrow-circle-right"></i></button>
+        </div>
+    </div>
+</div>
